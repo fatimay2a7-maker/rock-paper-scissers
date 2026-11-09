@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="game-container">
+      <h1>Rock Paper Scissors</h1>
+
+      <!-- Score Board -->
+      <section class="score-board">
+        <div class="score-card">
+          <h3>Wins</h3>
+          <p id="wins">0</p>
+        </div>
+
+        <div class="score-card">
+          <h3>Losses</h3>
+          <p id="losses">0</p>
+        </div>
+
+        <div class="score-card">
+          <h3>Tie</h3>
+          <p id="ties">0</p>
+        </div>
+      </section>
+
+      <!-- Game Choices -->
+      <section class="choices">
+        <button class="choice rock" data-choice="rock">
+          <div class="circle">
+            <span>✊</span>
+          </div>
+        </button>
+
+        <button class="choice paper" data-choice="paper">
+          <div class="circle">
+            <span>✋</span>
+          </div>
+        </button>
+
+        <button class="choice scissors" data-choice="scissors">
+          <div class="circle">
+            <span>✌️</span>
+          </div>
+        </button>
+      </section>
+
+      <!-- Result -->
+      <section class="result-section">
+        <h2 id="message">Choose Your Move</h2>
+
+        <div class="game-details">
+          <p id="player-result"></p>
+          <p id="computer-result"></p>
+        </div>
+      </section>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button id="reset-score">Reset Score</button>
+
+        <button id="play-again">Play Again</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
